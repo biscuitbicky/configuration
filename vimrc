@@ -15,43 +15,25 @@ set smartcase
 noremap = nzz
 noremap - Nzz
 noremap <LEADER><CR> :nohlsearch<CR>
-noremap n j
-noremap N 5j
-noremap e k
-noremap E 5k
-noremap i l
-noremap I L
 
-noremap u i
+noremap k i
+noremap K I
+
 noremap l u
 
-map Q :q<CR>
-map W :w<CR>
-
-" key remapping for QWERTY
-noremap f e
-noremap p r
-noremap g t
-noremap j y
-noremap l u
-noremap u i
-noremap U I
-noremap y o
-noremap ; p
-noremap : P
-noremap r s
-noremap s d
-noremap t f
-noremap d g
-noremap D G
-noremap dd gg
-noremap n j
-noremap e k
+noremap u k
+noremap n h
+noremap e j
 noremap i l
-noremap I L
-noremap o ;
-noremap O :
-noremap k n
+noremap U 5k
+noremap E 5j
+noremap N 0
+noremap I $
+
+noremap Q :q<CR>
+noremap W :w<CR>
+
+noremap h e
 
 call plug#begin('~/.vim/plugged')
 
