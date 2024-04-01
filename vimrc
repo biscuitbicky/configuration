@@ -6,23 +6,24 @@ set wrap
 set showcmd
 set wildmenu
 
-# basic remappings
+" basic remappings
 
 noremap ; p
-noremap o ;
-noremap f e
-noremap g t
-noremap j y
+noremap u i
 noremap l u
-noremap
-noremap
-noremap
-noremap 
-noremap
-noremap
-noremap
+noremap j y
+noremap g t
+noremap p r
+noremap f e
+noremap r s
+noremap s d
+noremap t f
+noremap d g
+noremap dd gg
+noremap o ;
+noremap k n
 
-# searching
+" searching
 
 set hlsearch
 exec "nohlsearch"
@@ -34,18 +35,19 @@ noremap = nzz
 noremap - Nzz
 noremap <LEADER><CR> :nohlsearch<CR>
 
-# cursor movement
+" cursor movement
 
 noremap h h
 noremap n j
 noremap e k
 noremap i l
-noremap N 5n
-noremap e 5k
-
+noremap N 5j
+noremap E 5k
+noremap W 3w
+noremap B 3b
 
 noremap Q :q<CR>
-noremap W :w<CR>
+noremap R :w<CR>
 
 
 call plug#begin('~/.vim/plugged')
